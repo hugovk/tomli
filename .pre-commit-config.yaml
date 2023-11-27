@@ -1,12 +1,12 @@
 repos:
 - repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: 12885e376b93dc4536ad68d156065601e4433665  # frozen: v1.5.1
+  rev: 762c66ea96843b54b936fc680162ea67f85ec2d7  # frozen: v1.5.4
   hooks:
   - id: insert-license
     files: '^src/.+\.py$|^tests/.+\.py$'
     args: ['--license-filepath', 'LICENSE-HEADER']
 - repo: https://github.com/executablebooks/mdformat
-  rev: 82f84976fc57d5ae61cbf2d457a26a89d4b4eef4  # frozen: 0.7.16
+  rev: 08fba30538869a440b5059de90af03e3502e35fb  # frozen: 0.7.17
   hooks:
   - id: mdformat
     additional_dependencies:
@@ -14,7 +14,7 @@ repos:
     - mdformat-gfm
     - mdformat-black
 - repo: https://github.com/asottile/yesqa
-  rev: 265e9ff7c83add4949f81bb5fe14f4a743ffb04c  # frozen: v1.4.0
+  rev: f2ae90cf9e1661ade79d0881186ce4fd7ba6ee79  # frozen: v1.5.0
   hooks:
   - id: yesqa
     additional_dependencies:
@@ -32,15 +32,15 @@ repos:
   hooks:
   - id: isort
 - repo: https://github.com/psf/black
-  rev: bf7a16254ec96b084a6caf3d435ec18f0f245cc7  # frozen: 23.3.0
+  rev: 2a1c67e0b2f81df602ec1f6e7aeb030b9709dc7c  # frozen: 23.11.0
   hooks:
   - id: black
-- repo: https://github.com/myint/docformatter
-  rev: 8b8dae1d990e2e4fec7ff6704a79c23a403cd605  # frozen: v1.5.0
+- repo: https://github.com/PyCQA/docformatter
+  rev: dfefe062799848234b4cd60b04aa633c0608025e  # frozen: v1.7.5
   hooks:
   - id: docformatter
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: f71fa2c1f9cf5cb705f73dffe4b21f7c61470ba9  # frozen: v4.4.0
+  rev: c4a0b883114b00d8d76b479c820ce7950211c99b  # frozen: v4.5.0
   hooks:
   - id: check-yaml
 - repo: https://github.com/pre-commit/pygrep-hooks
@@ -50,7 +50,7 @@ repos:
   - id: python-check-blanket-noqa
   - id: python-check-blanket-type-ignore
 - repo: https://github.com/PyCQA/flake8
-  rev: c838a5e98878f17889cfce311e1406d252f87ec5  # frozen: 6.0.0
+  rev: 10f4af6dbcf93456ba7df762278ae61ba3120dc6  # frozen: 6.1.0
   hooks:
   - id: flake8
     additional_dependencies:
@@ -58,7 +58,7 @@ repos:
     - flake8-builtins
     - flake8-comprehensions
 - repo: https://github.com/pre-commit/mirrors-mypy
-  rev: b84480de6124681d551749528ab4b42c2269df8c  # frozen: v1.2.0
+  rev: 4daa14b20c0f48f472528c2b5f5bca28a18a7ce0  # frozen: v1.7.1
   hooks:
   - id: mypy
     args: ["--scripts-are-modules"]
